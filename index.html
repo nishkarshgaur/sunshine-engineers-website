@@ -259,9 +259,9 @@ body{font-family:var(--sans);background:var(--white);color:var(--ink);overflow-x
 .gal-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:52px}
 .gal-grid{
   display:grid;
-  grid-template-columns:repeat(12,1fr);
-  grid-auto-rows:210px;
-  gap:3px;
+  grid-template-columns:repeat(4,1fr);
+  
+  gap:4px;
 }
 .gi{overflow:hidden;position:relative;cursor:pointer}
 .gi img{width:100%;height:100%;object-fit:cover;transition:transform 0.8s ease,filter 0.6s ease;display:block;filter:grayscale(100%)}
@@ -279,12 +279,8 @@ body{font-family:var(--sans);background:var(--white);color:var(--ink);overflow-x
 }
 .gi:hover .gi-icon{opacity:1;transform:scale(1)}
 .gi-icon svg{width:20px;height:20px;stroke:white;fill:none;stroke-width:1.5}
-.gi-1{grid-column:span 5;grid-row:span 2}
-.gi-2{grid-column:span 4}
-.gi-3{grid-column:span 3}
-.gi-4{grid-column:span 3;grid-row:span 2}
-.gi-5{grid-column:span 4}
-.gi-6{grid-column:span 5}
+.gi-1,.gi-2,.gi-3,.gi-4,.gi-5,.gi-6{grid-column:span 1;grid-row:span 1}
+.gi{aspect-ratio:4/3}
 
 /* ── CLIENTS ── */
 #clients{background:var(--steel)}
@@ -416,8 +412,7 @@ footer{background:var(--ink);color:rgba(255,255,255,0.45)}
   .numbers-grid{grid-template-columns:repeat(2,1fr)}
   .num-item{padding:40px 28px}
   .num-item:nth-child(2){border-right:none}
-  .gal-grid{grid-template-columns:1fr 1fr;grid-auto-rows:150px}
-  .gi-1,.gi-2,.gi-3,.gi-4,.gi-5,.gi-6{grid-column:span 1;grid-row:span 1}
+  .gal-grid{grid-template-columns:repeat(3,1fr)}
   .cert-grid{grid-template-columns:1fr}
   .clients-grid{grid-template-columns:1fr 1fr}
   .contact-form{padding:32px 24px}
@@ -430,7 +425,7 @@ footer{background:var(--ink);color:rgba(255,255,255,0.45)}
 @media(max-width:420px){
   .hero-h1{font-size:30px}
   .metric-n{font-size:32px}
-  .gal-grid{grid-template-columns:1fr;grid-auto-rows:200px}
+  .gal-grid{grid-template-columns:repeat(2,1fr)}
   .clients-grid{grid-template-columns:1fr}
   .numbers-grid{grid-template-columns:1fr 1fr}
 }
