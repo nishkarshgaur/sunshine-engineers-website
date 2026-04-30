@@ -429,6 +429,74 @@ footer{background:var(--ink);color:rgba(255,255,255,0.45)}
   .clients-grid{grid-template-columns:1fr}
   .numbers-grid{grid-template-columns:1fr 1fr}
 }
+
+/* ── INFRASTRUCTURE ── */
+#infrastructure{background:var(--off)}
+.infra-grid{display:grid;grid-template-columns:1fr;gap:48px;margin-top:48px}
+.infra-intro{font-size:16px;line-height:1.85;color:var(--ink2);font-weight:300;max-width:880px}
+.infra-table-wrap{background:var(--white);overflow:hidden;border:1px solid var(--border)}
+.infra-table-title{font-family:var(--cond);font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--accent);padding:24px 36px;border-bottom:1px solid var(--border)}
+.infra-table{width:100%;border-collapse:collapse;font-size:14px}
+.infra-table th{background:var(--off);text-align:left;padding:16px 24px;font-family:var(--cond);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--ink3);font-weight:600;border-bottom:1px solid var(--border)}
+.infra-table td{padding:16px 24px;border-bottom:1px solid var(--border2);color:var(--ink2);vertical-align:top}
+.infra-table tr:last-child td{border-bottom:none}
+.infra-table td:first-child{font-family:var(--cond);font-weight:600;color:var(--ink3);width:60px}
+.infra-table td:last-child{width:140px;font-weight:500}
+.infra-table .item-title{font-weight:600;color:var(--ink);text-transform:uppercase;font-size:13px;letter-spacing:0.5px;margin-bottom:6px;display:block}
+.infra-table .item-spec{display:block;color:var(--ink3);font-size:13px;line-height:1.7}
+
+/* ── COMMERCIAL CERTIFICATIONS ── */
+.commcert-wrap{background:var(--steel);padding:80px 64px;margin-top:80px}
+.commcert-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:48px;max-width:1320px;margin-left:auto;margin-right:auto}
+.commcert-head .tag-line span{color:var(--gold)}
+.commcert-head h2{color:var(--white);font-family:var(--serif);font-size:clamp(32px,3.2vw,44px);font-weight:500;letter-spacing:-0.3px}
+.commcert-head h2 em{color:var(--gold);font-style:italic}
+.commcert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,0.08);max-width:1320px;margin:0 auto}
+.commcert-item{background:var(--steel);padding:32px 36px;display:flex;justify-content:space-between;align-items:center;gap:24px;transition:background 0.3s}
+.commcert-item:hover{background:var(--steel2)}
+.commcert-label{font-family:var(--cond);font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,0.55);font-weight:500}
+.commcert-value{font-family:var(--serif);font-size:18px;color:var(--white);font-weight:400;letter-spacing:0.3px}
+
+/* ── FABRICATION SERVICES BREAKDOWN ── */
+#fab-services{background:var(--white)}
+.fabsvc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--off2);margin-top:56px}
+.fabsvc-card{background:var(--white);padding:48px 44px;transition:background 0.35s}
+.fabsvc-card:hover{background:var(--off)}
+.fabsvc-cat{font-family:var(--cond);font-size:10px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--accent);margin-bottom:16px;display:flex;align-items:center;gap:14px}
+.fabsvc-cat::before{content:'';width:32px;height:1px;background:var(--accent)}
+.fabsvc-card h3{font-family:var(--serif);font-size:26px;font-weight:500;color:var(--ink);margin-bottom:24px;letter-spacing:-0.3px}
+.fabsvc-list{list-style:none;padding:0;margin:0}
+.fabsvc-list li{padding:10px 0;border-bottom:1px solid var(--border2);font-size:14px;color:var(--ink2);display:flex;gap:14px;align-items:baseline}
+.fabsvc-list li:last-child{border-bottom:none}
+.fabsvc-list li::before{content:counter(item);counter-increment:item;font-family:var(--cond);font-size:10px;color:var(--ink4);font-weight:600;min-width:18px;letter-spacing:1px}
+.fabsvc-list{counter-reset:item}
+
+/* ── FULL CLIENT LIST ── */
+#clients-full{background:var(--steel);padding:120px 0}
+.clients-full-inner{max-width:1320px;margin:0 auto;padding:0 64px}
+.clients-full-head{margin-bottom:64px}
+.clients-full-head .tag-line span{color:var(--gold)}
+.clients-full-head h2{color:var(--white)}
+.clients-full-head .sp{color:rgba(255,255,255,0.55);max-width:560px;margin-top:16px}
+.clients-full-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0 60px}
+.clients-full-grid li{padding:13px 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:14px;color:rgba(255,255,255,0.78);display:flex;gap:18px;align-items:baseline;list-style:none;line-height:1.5}
+.clients-full-grid li:hover{color:var(--white)}
+.clients-full-grid .num{font-family:var(--cond);font-size:11px;color:var(--gold);font-weight:600;min-width:28px;letter-spacing:1px}
+.clients-more{margin-top:48px;text-align:center;font-family:var(--cond);font-size:14px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:500}
+.clients-more::before,.clients-more::after{content:'';display:inline-block;width:40px;height:1px;background:var(--gold);vertical-align:middle;margin:0 18px}
+
+@media (max-width:900px){
+  .infra-table-title{padding:20px 22px}
+  .infra-table th,.infra-table td{padding:14px 18px}
+  .commcert-wrap{padding:48px 28px}
+  .commcert-grid{grid-template-columns:1fr}
+  .commcert-item{padding:24px 22px;flex-direction:column;align-items:flex-start;gap:8px}
+  .fabsvc-grid{grid-template-columns:1fr}
+  .fabsvc-card{padding:36px 28px}
+  .clients-full-inner{padding:0 28px}
+  .clients-full-grid{grid-template-columns:1fr}
+}
+
 </style>
 
 </head>
@@ -453,6 +521,7 @@ footer{background:var(--ink);color:rgba(255,255,255,0.45)}
     <a href="#about">About</a>
     <a href="#products">Products</a>
     <a href="#gallery">Gallery</a>
+    <a href="#infrastructure">Infrastructure</a>
     <a href="#certs">Certifications</a>
     <a href="#clients">Clients</a>
     <a href="#contact" class="nav-btn">Enquire</a>
@@ -465,6 +534,7 @@ footer{background:var(--ink);color:rgba(255,255,255,0.45)}
   <a href="#about" onclick="closeMobMenu()">About</a>
   <a href="#products" onclick="closeMobMenu()">Products</a>
   <a href="#gallery" onclick="closeMobMenu()">Gallery</a>
+  <a href="#infrastructure" onclick="closeMobMenu()">Infrastructure</a>
   <a href="#certs" onclick="closeMobMenu()">Certifications</a>
   <a href="#clients" onclick="closeMobMenu()">Clients</a>
   <a href="#contact" class="mob-enquire" onclick="closeMobMenu()">Enquire Now</a>
@@ -641,6 +711,112 @@ footer{background:var(--ink);color:rgba(255,255,255,0.45)}
   </div>
 </section>
 
+<!-- INFRASTRUCTURE -->
+<section id="infrastructure" class="s">
+  <div class="s-head r">
+    <div class="tag-line"><span class="tag-dash"></span>Our Capability</div>
+    <h2 class="sh">Infrastructure &<br><em>Machinery</em></h2>
+  </div>
+  <p class="sp r r-d1 infra-intro">Availability of production resources of global standards is the base for growth. We have adequate manufacturing area of approximately 5,000 square feet and another 15,000 square feet located at Amrit Steel Compound, Ghaziabad, U.P.</p>
+  <div class="infra-grid r r-d2">
+
+    <div class="infra-table-wrap">
+      <div class="infra-table-title">Details of Machinery</div>
+      <table class="infra-table">
+        <thead><tr><th>S No.</th><th>Machinery Description</th><th>Qty</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td><span class="item-title">Power Press</span><span class="item-spec">Capacity — 75 MT</span><span class="item-spec">Capacity — 150 MT</span><span class="item-spec">Capacity — 250 MT</span></td><td>02 Nos.<br>01 Nos.<br>01 Nos.</td></tr>
+          <tr><td>2</td><td><span class="item-title">Welding M/c</span><span class="item-spec">MIG Welding M/c</span><span class="item-spec">Rectifier Welding M/c</span></td><td>4 Nos.<br>2 Nos.</td></tr>
+          <tr><td>3</td><td><span class="item-title">Drilling M/c</span><span class="item-spec">Radial Drilling M/c (Up to 50 mm)</span><span class="item-spec">Portable Drilling M/c</span><span class="item-spec">Magnetic Drilling M/c</span></td><td>PUG M/c</td></tr>
+          <tr><td>4</td><td><span class="item-title">Surface Finishing Shaper</span></td><td>1 Nos.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="infra-table-wrap">
+      <div class="infra-table-title">Tools &amp; Tackles</div>
+      <table class="infra-table">
+        <thead><tr><th>S No.</th><th>Tool &amp; Tackles</th><th>Qty</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Spanner</td><td>5 Set</td></tr>
+          <tr><td>2</td><td>PUG M/c</td><td>1 Set</td></tr>
+          <tr><td>3</td><td>Hand Cutting Torch</td><td>3 Set</td></tr>
+          <tr><td>4</td><td>Surface Finish (Hand Grinder)</td><td>5 Set</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="infra-table-wrap">
+      <div class="infra-table-title">Material-Handling Equipment</div>
+      <table class="infra-table">
+        <thead><tr><th>S No.</th><th>Material-Handling Equipment</th><th>Qty</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>EOT (Over Head) — 5,000 KG</td><td>01 Nos.</td></tr>
+          <tr><td>2</td><td>Hydra — 10,000 KG</td><td>01 Nos.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+<!-- FABRICATION SERVICES BREAKDOWN -->
+<section id="fab-services" class="s">
+  <div class="s-head r">
+    <div class="tag-line"><span class="tag-dash"></span>Fabrication Unit</div>
+    <h2 class="sh">List of Products<br>&amp; <em>Services</em></h2>
+  </div>
+  <p class="sp r r-d1" style="max-width:680px">Comprehensive steel fabrication and civil engineering capabilities — from heavy structural builds to lightweight galvanized products and turnkey civil work.</p>
+  <div class="fabsvc-grid r r-d2">
+
+    <div class="fabsvc-card">
+      <div class="fabsvc-cat">Heavy Structural Fabrication</div>
+      <h3>Industrial-grade structural builds</h3>
+      <ol class="fabsvc-list">
+        <li>Heavy Structural Fabrication</li>
+        <li>Pre-Engineered Building</li>
+        <li>Pre-Fabricated Structure</li>
+        <li>Solar Structure</li>
+        <li>Foot Over Bridge</li>
+        <li>Welded Plate Girders (RDSO)</li>
+      </ol>
+    </div>
+
+    <div class="fabsvc-card">
+      <div class="fabsvc-cat">Light Weight Structures</div>
+      <h3>Galvanized &amp; tower products</h3>
+      <ol class="fabsvc-list">
+        <li>MS Hot-dip Galvanized Products</li>
+        <li>Solar Structures</li>
+        <li>MMS (Rooftop &amp; Ground Based)</li>
+        <li>Telecom Tower</li>
+        <li>Transmission Tower 220 KVA</li>
+      </ol>
+    </div>
+
+    <div class="fabsvc-card">
+      <div class="fabsvc-cat">Swachh Bharat Mission</div>
+      <h3>Sanitation &amp; waste systems</h3>
+      <ol class="fabsvc-list">
+        <li>E-Toilet &amp; Waste Management System</li>
+        <li>MRF (Material Recovery Facility)</li>
+      </ol>
+    </div>
+
+    <div class="fabsvc-card">
+      <div class="fabsvc-cat">Civil Work</div>
+      <h3>End-to-end civil execution</h3>
+      <ol class="fabsvc-list">
+        <li>Piling Work</li>
+        <li>Digging and Mud Excavation Work</li>
+        <li>TMT Binding Work</li>
+        <li>RMC Shuttering and Casting Work</li>
+      </ol>
+    </div>
+
+  </div>
+</section>
+
 <!-- GALLERY -->
 <section id="gallery" class="s">
   <div class="gal-header r">
@@ -693,52 +869,153 @@ footer{background:var(--ink);color:rgba(255,255,255,0.45)}
 <!-- CERTIFICATIONS -->
 <section id="certs" class="s">
   <div class="s-head r">
-    <div class="tag-line"><span class="tag-dash"></span>CERTIFICATIONS</div>
+    <div class="tag-line"><span class="tag-dash"></span>Certifications</div>
     <h2 class="sh">Quality you can <em>trust</em></h2>
   </div>
-  <div class="cert-grid r r-d1">
-    <div class="cert-card">
-      <div class="cert-body">
-        <div class="cert-tag">ISO 9001:2008</div>
-        <h3 class="cert-title">Quality Management System</h3>
-        <p class="cert-desc">Certified by JAS-ANZ accredited body for consistent quality in design, manufacturing and delivery.</p>
-      </div>
-    </div>
-    <div class="cert-card">
-      <div class="cert-body">
-        <div class="cert-tag">EXPORT EXCELLENCE</div>
-        <h3 class="cert-title">International Trade Certification</h3>
-        <p class="cert-desc">Recognised exporter with certification for international trade compliance and quality standards.</p>
-      </div>
+  <p class="sp r r-d1" style="max-width:680px">Our commitment towards quality is well demonstrated by the numerous quality audits we undergo every year — backed by NABL-certified labs and internationally recognised standards.</p>
+
+  <div class="infra-grid r r-d2" style="margin-top:56px">
+    <div class="infra-table-wrap">
+      <div class="infra-table-title">Quality Policy</div>
+      <table class="infra-table">
+        <thead><tr><th>S No.</th><th>Certificate Description</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td><span class="item-title">ISO 9001:2015</span><span class="item-spec">Certificate No. IAS/QMS/C1171</span></td><td>Quality Policy</td></tr>
+          <tr><td>2</td><td><span class="item-title">Welder Qualification Certificate</span><span class="item-spec">Certificate No. CIL/WQ Cert./SSC-01</span></td><td>NABL Certified Lab</td></tr>
+          <tr><td>3</td><td><span class="item-title">Instrument Calibration</span><span class="item-spec">Certificate No. AACPL/00701F, 702, 703, 704</span></td><td>NABL Certified Lab</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
-  <div class="cert-bottom r r-d2">
-    <div class="cert-card">
-      <div class="cert-body">
-        <div class="cert-tag">INDUSTRY RECOGNITION</div>
-        <h3 class="cert-title">Industry & Trade Award</h3>
-        <p class="cert-desc">Recognised for outstanding contribution to the steel fabrication and industrial chemicals sector.</p>
+</section>
+
+<!-- COMMERCIAL CERTIFICATIONS -->
+<section id="commercial-certs">
+  <div class="commcert-wrap">
+    <div class="commcert-head r">
+      <div>
+        <div class="tag-line"><span>Sub-category</span></div>
+        <h2>Commercial <em>Certifications</em></h2>
       </div>
+      <p style="color:rgba(255,255,255,0.5);font-size:14px;font-weight:300;max-width:320px;text-align:right">Statutory and trade registrations enabling pan-India and international operations.</p>
+    </div>
+    <div class="commcert-grid r r-d1">
+      <div class="commcert-item"><span class="commcert-label">PAN Card</span><span class="commcert-value">AQAPS2779Q</span></div>
+      <div class="commcert-item"><span class="commcert-label">GSTIN</span><span class="commcert-value">09AQAPS2779Q</span></div>
+      <div class="commcert-item"><span class="commcert-label">MSME / Udyog Aadhar</span><span class="commcert-value">UP29B0001983</span></div>
+      <div class="commcert-item"><span class="commcert-label">SSI</span><span class="commcert-value">09-009-11-04141-i</span></div>
+      <div class="commcert-item"><span class="commcert-label">PF / ESI Code</span><span class="commcert-value">67000543470000699</span></div>
+      <div class="commcert-item"><span class="commcert-label">Pollution Certificate No.</span><span class="commcert-value">2996/S318/NOC53/10</span></div>
+      <div class="commcert-item"><span class="commcert-label">IEC</span><span class="commcert-value">0511070926</span></div>
+      <div class="commcert-item"><span class="commcert-label">DUNS</span><span class="commcert-value">86-453-2458</span></div>
     </div>
   </div>
 </section>
 
 <!-- CLIENTS -->
 <section id="clients">
-  <div class="s-inner">
-    <div class="clients-inner r">
-      <div class="tag-line"><span>OUR CLIENTS</span></div>
-      <h2 class="sh" style="color:#fff;margin-bottom:16px">Trusted by industry <em>leaders</em></h2>
-      <p style="color:rgba(255,255,255,0.4);font-size:15px;font-weight:300;line-height:1.9;margin-bottom:56px;max-width:500px">Delivering precision-engineered products and chemicals to leading companies across India and beyond.</p>
-      <div class="clients-grid">
-        <div class="client-item r r-d1"><span class="client-name">Power Grid Corporation</span><span class="client-sec">Transmission Towers</span></div>
-        <div class="client-item r r-d1"><span class="client-name">BSNL</span><span class="client-sec">Telecom Infrastructure</span></div>
-        <div class="client-item r r-d2"><span class="client-name">Tata Projects</span><span class="client-sec">Steel Fabrication</span></div>
-        <div class="client-item r r-d2"><span class="client-name">L&T Construction</span><span class="client-sec">Structural Steel</span></div>
-        <div class="client-item r r-d3"><span class="client-name">NTPC Limited</span><span class="client-sec">Power Infrastructure</span></div>
-        <div class="client-item r r-d3"><span class="client-name">Adani Group</span><span class="client-sec">Solar Structures</span></div>
-      </div>
+  <div class="clients-full-inner">
+    <div class="clients-full-head r">
+      <div class="tag-line"><span>Our Clients</span></div>
+      <h2 class="sh">Trusted by industry <em>leaders</em></h2>
+      <p class="sp">Delivering precision-engineered products and chemicals to leading companies across India and beyond. A snapshot of organisations we've partnered with:</p>
     </div>
+    <ol class="clients-full-grid r r-d1" style="padding:0;margin:0">
+        <li><span class="num">01</span><span>ISGEC Heavy Engineering Ltd.</span></li>
+        <li><span class="num">02</span><span>APCO Chetak Expressway P. Ltd.</span></li>
+        <li><span class="num">03</span><span>Tata International Ltd.</span></li>
+        <li><span class="num">04</span><span>Tata Projects Ltd.</span></li>
+        <li><span class="num">05</span><span>Mahendra EPC Ltd.</span></li>
+        <li><span class="num">06</span><span>Today Green Energy Pvt. Ltd.</span></li>
+        <li><span class="num">07</span><span>Welspun Enterprises Ltd.</span></li>
+        <li><span class="num">08</span><span>Avant Garde Power Solutions P. Ltd.</span></li>
+        <li><span class="num">09</span><span>Himenviro Environmental Engineering Co. P. Ltd.</span></li>
+        <li><span class="num">10</span><span>CEL Ltd. Sahibabad</span></li>
+        <li><span class="num">11</span><span>Essel</span></li>
+        <li><span class="num">12</span><span>Nagar-Palika Parshad, Barkot, Uttarkashi (U.K.)</span></li>
+        <li><span class="num">13</span><span>Nagar-Palika Parshad, Loni, Ghaziabad</span></li>
+        <li><span class="num">14</span><span>Nagar-Palika Parshad, Ayodhya, Faizabad</span></li>
+        <li><span class="num">15</span><span>Nagar-Palika Parshad, Khurja, Bulandshahar</span></li>
+        <li><span class="num">16</span><span>Nagar-Palika Parshad, Anoopshahar</span></li>
+        <li><span class="num">17</span><span>Nagar-Palika Parshad, Dibai, Bulandshahar</span></li>
+        <li><span class="num">18</span><span>Solid Material Conveying Systems, Noida</span></li>
+        <li><span class="num">19</span><span>Profile Engineers</span></li>
+        <li><span class="num">20</span><span>TNS Telecom Network Services Pvt. Ltd.</span></li>
+        <li><span class="num">21</span><span>UM Greens</span></li>
+        <li><span class="num">22</span><span>Prakash Asphaltings & Toll Highway India Ltd.</span></li>
+        <li><span class="num">23</span><span>Trading Engineers International Ltd.</span></li>
+        <li><span class="num">24</span><span>Salasar Techno Engineering Pvt. Ltd.</span></li>
+        <li><span class="num">25</span><span>Cellcone Tele Services Pvt. Ltd.</span></li>
+        <li><span class="num">26</span><span>Goodluck Steel Tubes Ltd.</span></li>
+        <li><span class="num">27</span><span>Rama Steel Tubes</span></li>
+        <li><span class="num">28</span><span>Garg Ispat Udyog Ltd.</span></li>
+        <li><span class="num">29</span><span>KL Concast Ltd.</span></li>
+        <li><span class="num">30</span><span>Swastik Pipes Ltd., Bahadurgarh</span></li>
+        <li><span class="num">31</span><span>Swastik Pipes Ltd., Kosi Mathura</span></li>
+        <li><span class="num">32</span><span>Advance Steel Tubes Ltd.</span></li>
+        <li><span class="num">33</span><span>Apollo Pipes (formerly Bihar Tubes Ltd.)</span></li>
+        <li><span class="num">34</span><span>Garg Tubes Ltd.</span></li>
+        <li><span class="num">35</span><span>Global Engg. Ltd.</span></li>
+        <li><span class="num">36</span><span>Kamakhya Galvanizer</span></li>
+        <li><span class="num">37</span><span>Shivam Engineers</span></li>
+        <li><span class="num">38</span><span>Uni-Mech Industries</span></li>
+        <li><span class="num">39</span><span>Safe Towers P. Ltd.</span></li>
+        <li><span class="num">40</span><span>Indus Towers Ltd.</span></li>
+        <li><span class="num">41</span><span>GTL Limited, Mumbai</span></li>
+        <li><span class="num">42</span><span>Harsha Abakus Solar P. Ltd.</span></li>
+        <li><span class="num">43</span><span>SB Solar Services P. Ltd.</span></li>
+        <li><span class="num">44</span><span>ULMA Form Work System India Ltd.</span></li>
+        <li><span class="num">45</span><span>PERI India</span></li>
+        <li><span class="num">46</span><span>Delhi Jal Board</span></li>
+        <li><span class="num">47</span><span>Cosmo Infra Solutions</span></li>
+        <li><span class="num">48</span><span>Sheltra Constructions</span></li>
+        <li><span class="num">49</span><span>Metso Minerals P. Ltd.</span></li>
+        <li><span class="num">50</span><span>Fontus Waters</span></li>
+        <li><span class="num">51</span><span>Enexco Technologies P. Ltd.</span></li>
+        <li><span class="num">52</span><span>Today Infrastructures</span></li>
+        <li><span class="num">53</span><span>Applied Solar</span></li>
+        <li><span class="num">54</span><span>Bharti Communications</span></li>
+        <li><span class="num">55</span><span>Suryaday Pvt. Ltd.</span></li>
+        <li><span class="num">56</span><span>Shrinet and Shandalya Constructions P. Ltd.</span></li>
+        <li><span class="num">57</span><span>Tapan Solar Pvt. Ltd.</span></li>
+        <li><span class="num">58</span><span>Artheon Electronics P. Ltd.</span></li>
+        <li><span class="num">59</span><span>Servotech Power Systems Ltd.</span></li>
+        <li><span class="num">60</span><span>Solar Universe P. Ltd.</span></li>
+        <li><span class="num">61</span><span>Green Ripples P. Ltd.</span></li>
+        <li><span class="num">62</span><span>Spacechem Engineers</span></li>
+        <li><span class="num">63</span><span>Quick Solar Solutions</span></li>
+        <li><span class="num">64</span><span>Sun Source Energy P. Ltd.</span></li>
+        <li><span class="num">65</span><span>Angelique International Ltd.</span></li>
+        <li><span class="num">66</span><span>Sundigo Solar Solutions</span></li>
+        <li><span class="num">67</span><span>North Star Solar Power P. Ltd.</span></li>
+        <li><span class="num">68</span><span>AVP Infra P. Ltd.</span></li>
+        <li><span class="num">69</span><span>Waaree Engineers Ltd.</span></li>
+        <li><span class="num">70</span><span>Statcon Power Controls Ltd.</span></li>
+        <li><span class="num">71</span><span>Raghuvir Associates</span></li>
+        <li><span class="num">72</span><span>QSS Energy LLP</span></li>
+        <li><span class="num">73</span><span>R.K. Industries (For MVVNL)</span></li>
+        <li><span class="num">74</span><span>ASPG Infrastructures P. Ltd.</span></li>
+        <li><span class="num">75</span><span>Aegis Power Solutions P. Ltd.</span></li>
+        <li><span class="num">76</span><span>Alpine Energies Pvt. Ltd.</span></li>
+        <li><span class="num">77</span><span>App Tech Solutions</span></li>
+        <li><span class="num">78</span><span>Global Engineering</span></li>
+        <li><span class="num">79</span><span>Kamakhya Industries</span></li>
+        <li><span class="num">80</span><span>Laxmi Technocrats</span></li>
+        <li><span class="num">81</span><span>Lifeline Technocrate P. Ltd.</span></li>
+        <li><span class="num">82</span><span>Mars Tele Infra</span></li>
+        <li><span class="num">83</span><span>MS Renewable Power Solutions</span></li>
+        <li><span class="num">84</span><span>ODEMA Renewables India (P) Ltd.</span></li>
+        <li><span class="num">85</span><span>OneIndig Technologies P. Ltd.</span></li>
+        <li><span class="num">86</span><span>Orkan Energy P. Ltd.</span></li>
+        <li><span class="num">87</span><span>Quadra Infratel Synergies P. Ltd.</span></li>
+        <li><span class="num">88</span><span>Solar Swaraj Engineers P. Ltd.</span></li>
+        <li><span class="num">89</span><span>Sun Power Systems</span></li>
+        <li><span class="num">90</span><span>WPIL Ltd.</span></li>
+        <li><span class="num">91</span><span>SANNA Enterprises, Nagaland</span></li>
+        <li><span class="num">92</span><span>RAYS Solar Enterprises</span></li>
+        <li><span class="num">93</span><span>Solid Material Conveying Systems Ltd.</span></li>
+    </ol>
+    <div class="clients-more r r-d2">and many more</div>
   </div>
 </section>
 
@@ -813,6 +1090,7 @@ footer{background:var(--ink);color:rgba(255,255,255,0.45)}
         <li><a href="#about">About Us</a></li>
         <li><a href="#products">Products &amp; Services</a></li>
         <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#infrastructure">Infrastructure</a></li>
         <li><a href="#certs">Certifications</a></li>
         <li><a href="#clients">Our Clients</a></li>
       </ul>
